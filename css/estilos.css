@@ -151,7 +151,7 @@ header {
 footer {
     color: #000;
     width: 100%;
-    background-color: #1d4fff;
+    background-color: #000c39;
     padding: 3rem;
 }
 
@@ -185,7 +185,7 @@ header nav a {
 
 header nav a:hover,
 header nav a:focus-visible {
-    color: #ff2c88;
+    color: #008a8a;
     outline: none;
 }
 
@@ -254,6 +254,9 @@ img.imagenicono2 {
     max-height: 50px;
 }
 
+img.imagenastro {
+    max-width: 750px;
+}
 
 /* Texto */
 
@@ -268,7 +271,7 @@ h1 {
 
 h1.tituloseparador {
     color: #ffffff;
-    font-weight: 500;
+    font-weight: 900;
     font-size: 60px;
     text-align: center;
 }
@@ -341,7 +344,7 @@ a.boton {
 
 a:hover,
 a:focus-visible {
-    color: #ff2c88;
+    color: #008a8a;
     outline: none;
 }
 
@@ -503,9 +506,31 @@ div.contenedorseparador {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 5rem;
-    background-image: linear-gradient(to right, #000000 0%, #1d4fff 25%, #1d4fff 75%, #000000 100%);
+    padding-block: 12rem;
+    background-image: url(../imagenes/separadorweb.png);
     background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+/* Final */
+
+#final {
+    display: flex;
+    gap: 3rem;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    background-image: linear-gradient(to right, #000000 0%, #1d4fff 25%, #1d4fff 75%, #000000 100%);
+    padding-inline: 5rem;
+    padding-top: 1rem;
+}
+
+div.finaltexto {
+    display: grid;
+    gap: 3rem;
+    max-width: 750px;
+    justify-items: center;
+
 }
 
 /* Footer */
@@ -854,6 +879,26 @@ div.redes {
     div.caracteristicasinfo2 {
         flex-wrap: nowrap;
         flex-direction: column;
+    }
+
+    div.contenedorseparador {
+        padding-block: 3rem;
+        background-image: url(../imagenes/separadormovil.png);
+    }
+
+    #final {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        padding-inline: 1rem;
+        gap: 1.5rem;
+    }
+
+    div.finaltexto {
+        gap: 1.5rem;
+    }
+
+    img.imagenastro {
+        max-width: 75%;
     }
 
 }
