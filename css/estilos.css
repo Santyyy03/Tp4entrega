@@ -185,7 +185,7 @@ header nav a {
 
 header nav a:hover,
 header nav a:focus-visible {
-    color: #008a8a;
+    color: #1d4fff;
     outline: none;
 }
 
@@ -246,12 +246,12 @@ img.accesorios {
 }
 
 img.imagencompatibilidad {
-    max-height: 750px;
+    max-width: 850px;
 }
 
 img.imagenicono2 {
-    max-width: 50px;
-    max-height: 50px;
+    max-width: 100px;
+    max-height: 100px;
 }
 
 img.imagenastro {
@@ -262,7 +262,7 @@ img.imagenastro {
 
 h1 {
     color: #ffffff;
-    font-size: 72px;
+    font-size: 128px;
     text-align: left;
     font-family: 'Poppins';
     line-height: 1;
@@ -278,7 +278,7 @@ h1.tituloseparador {
 
 h2 {
     color: #ffffff;
-    font-size: 32px;
+    font-size: 36px;
     text-align: center;
     font-family: 'Poppins';
     font-weight: 200;
@@ -299,10 +299,10 @@ h3.titulocompatibilidad {
 
 h4 {
     color: #1d4fff;
-    font-size: 24px;
+    font-size: 28px;
     text-align: center;
     font-family: 'Poppins';
-    font-weight: 300;
+    font-weight: 500;
 }
 
 h4.titulocaracteristicas {
@@ -344,14 +344,14 @@ a.boton {
 
 a:hover,
 a:focus-visible {
-    color: #008a8a;
+    color: #1d4fff;
     outline: none;
 }
 
 /* Sección 1 */
 
 #inicio {
-    background-image: url(../imagenes/Nuevo\ fondo\ web.png);
+    background-image: url(../imagenes/Nuevo\ fondo\ web\ 4.webp);
     background-size: 100%;
     background-repeat: no-repeat;
     height: 100dvh;
@@ -370,6 +370,7 @@ div.contenedorinicio {
     align-items: center;
     flex-direction: row-reverse;
     justify-content: space-evenly;
+    margin: 3rem;
 }
 
 /* Sección 2*/
@@ -405,7 +406,7 @@ div.diseñoinfo {
 
 div.contenedorcompatibilidad {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     background-image: linear-gradient(to right, #000000 0%, #1d4fff 25%, #1d4fff 75%, #000000 100%);
     flex-direction: row-reverse;
@@ -414,8 +415,9 @@ div.contenedorcompatibilidad {
 
 div.contenedortexto {
     display: grid;
-    justify-items: start;
+    justify-items: center;
     gap: 5rem;
+    margin-inline: auto;
 }
 
 ul.listacompatibilidad {
@@ -460,40 +462,6 @@ div.caracteristicastexto {
     margin-inline: 10rem;
 }
 
-/* Sección 5 */
-
-#personalizacion {
-    display: grid;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-    max-width: 100%;
-    padding-block: calc(100px + 3rem);
-    gap: 5rem;
-    margin-inline: auto;
-}
-
-div.controles {
-    display: flex;
-    gap: 5rem;
-}
-
-figure.colorescontroles {
-    display: grid;
-    justify-items: center;
-    gap: 1rem;
-}
-
-p.textopersonalizacion {
-    max-width: 50%;
-}
-
-div.contenedorpersonalizacion {
-    display: grid;
-    gap: 1.5rem;
-    justify-items: center;
-
-}
 
 /* Separador */
 
@@ -520,9 +488,10 @@ div.contenedorseparador {
     flex-direction: row-reverse;
     justify-content: space-around;
     align-items: center;
-    background-image: linear-gradient(to right, #000000 0%, #1d4fff 25%, #1d4fff 75%, #000000 100%);
+    background-image: linear-gradient(to bottom, #000000 , #1d4fff);
     padding-inline: 5rem;
     padding-top: 1rem;
+    margin-top: 10rem;
 }
 
 div.finaltexto {
